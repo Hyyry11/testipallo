@@ -2,8 +2,10 @@
 Testipallo - A simple module for testing purposes
 """
 
+from typing import Union
 
-def laske_summa(a, b):
+
+def laske_summa(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     """
     Calculate the sum of two numbers.
     
@@ -17,7 +19,7 @@ def laske_summa(a, b):
     return a + b
 
 
-def laske_erotus(a, b):
+def laske_erotus(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     """
     Calculate the difference of two numbers.
     
@@ -31,7 +33,7 @@ def laske_erotus(a, b):
     return a - b
 
 
-def laske_tulo(a, b):
+def laske_tulo(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     """
     Calculate the product of two numbers.
     
@@ -45,7 +47,7 @@ def laske_tulo(a, b):
     return a * b
 
 
-def tervehdi(nimi="Maailma"):
+def tervehdi(nimi: str = "Maailma") -> str:
     """
     Return a greeting message.
     
